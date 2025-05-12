@@ -222,9 +222,9 @@ class Rejilla:
         for k in I:
             if (ord(k) >= self.NenC.rango[0]) and (ord(k) <= self.NenC.rango[1]):
                 n, X, Y = self.NenC.inv(k)
-                # print(f'{n}, ({X}, {Y}) -> {I[k]}')
+                print(f'N:{n}, X:{X}, Y:{Y} = {I[k]}')
                 if I[k]:
                     axes.text(X * step_x + step_x / 2, Y * step_y + step_y / 2, n, \
                               ha = "center", va = "center", size = 30, c = 'k')
         axes.axis('off')
-        plt.show()
+        plt.show
